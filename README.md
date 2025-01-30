@@ -36,12 +36,12 @@ Follow these steps to get the project up and running locally.
 Visit http://localhost:3000 in your browser to view the website.
 
 ## Acknowledgements
-### React.js: JavaScript library for building user interfaces.
-### Tailwind CSS: Utility-first CSS framework for building custom designs.
-### Redux: State management library for React.
-### Dialogflow: Google service for building conversational interfaces (similar to the custom AI integration).
-### GitHub Actions: CI/CD tool to automate testing and deployment processes.
-### Azure: Cloud platform used for deployment.
+**React.js:** JavaScript library for building user interfaces.
+**Tailwind CSS:** Utility-first CSS framework for building custom designs.
+**Redux:** State management library for React.
+**Dialogflow:** Google service for building conversational interfaces (similar to the custom AI integration).
+**GitHub Actions:** CI/CD tool to automate testing and deployment processes.
+**Azure:** Cloud platform used for deployment.
 
 ## Contact
 #### If you have any questions or feedback, feel free to reach out via the GitHub Issues section or directly at ashevkar@gmail.com.
