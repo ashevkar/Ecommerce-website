@@ -1,0 +1,266 @@
+/* PumaLandingPage.css */
+
+* {
+  margin: 0;
+}
+
+.landing-page {
+  font-family: 'Geogrotesque', serif;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+}
+
+.shop-now-button {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  padding: 10px;
+}
+
+.background-image, .bg1, .bg2, .bg3, .bg4 {
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+}
+
+@media (max-width: 1200px) {
+  .background-image, .bg1, .bg2, .bg3, .bg4 {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .background-image, .bg1, .bg2, .bg3, .bg4 {
+    height: 40vh;
+  }
+}
+
+.background-image {
+  background-image: url('/public/images/bg4.png');
+}
+
+.bg1 {
+  background-image: url('/public/images/bg2.png');
+  margin-top: 30px;
+}
+
+.bg2 {
+  background-image: url('/public/images/bg1.png');
+}
+
+.bg3 {
+  background-image: url('/public/images/bg5.png');
+  margin-top: 30px;
+}
+
+.bg4 {
+  background-image: url('/public/images/bg3.png');
+  margin-top: 30px;
+}
+
+/* Banner */
+.scrolling-banner {
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  white-space: nowrap;
+  padding: 0 20px;
+}
+
+.banner-content {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll 25s linear infinite;
+  position: relative;
+}
+
+.banner-content span {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+h2, h3, h4, h5 {
+  text-transform: uppercase;
+}
+
+.product-list {
+  background-color: #ffffff;
+  padding: 20px;
+  overflow-x: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+
+.shopping-options {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 25%;
+  max-width: 25%;
+  height: 100%;
+  margin-top: 20px;
+  box-shadow: 0 7px 5px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  background: white;
+}
+
+@media (max-width: 1400px) {
+  .options {
+    min-width: 45%;
+    max-width: 55%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .options {
+    min-width: 45%;
+    max-width: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  .options {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .product-image {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+.product-images {
+  overflow: hidden;
+}
+
+.product-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  background-position: center;
+  transition: transform 0.5s ease; /* Smooth transition for zoom effect */
+}
+
+.product-images:hover .product-image {
+  transform: scale(1.2); 
+}
+
+.text {
+  position: relative;
+  text-align: left;
+  color: gray;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+
+.option {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Product-section */
+.prod-section {
+  padding: 2rem;
+  background: #fff;  
+}
+
+.product-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.product-header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.product-header h4 {
+  font-size: 16px;
+  color: #666;
+}
+
+.prod-grid {
+  margin-right: 10%;
+  margin-left: 10%;
+
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+  .prod-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .prod-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+.prod-card {
+  position: relative;
+  background: white;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.prod-card img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.prod-card:hover {
+  transform: translateY(-10px);
+}
+
+.category-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.category-name {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #f8f8f8;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.product-section{
+  margin-top:20px;
+}
